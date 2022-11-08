@@ -1,0 +1,100 @@
+"""from behave import *
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+import time
+
+#Teste 3
+@given('receber um numero {x}')
+def step_impl(context,x):
+    context.x = int(x)
+    pass
+
+@when('o numero for divisivel por 0')
+def step_impl(context):
+    print(context)
+    if (context.x%2) == 0:
+        context
+    pass
+@then('mostre se eh par ou impar')
+def step_impl(context):
+    par = context.x
+    print(par)
+    pass
+
+#Teste 2
+@given('que acesso a pagina Algoritimo')
+def step_impl(context):
+    driver = webdriver.Chrome("chromedriver")
+    driver.get("https://www.cursoemvideo.com/curso/curso-de-algoritmo/")
+    context.driver = driver
+
+@when('tirar o spam')
+def step_impl(context):
+    print("passou")
+    time.sleep(8)
+    driver = context.driver
+    sp = driver.find_element(By.CLASS_NAME, "cp-field-element")
+    sp.click()
+    time.sleep(10)
+
+@when('aperto o logo curso em video')
+def step_impl(context):
+    print("passou1")
+    driver = context.driver
+    element = driver.find_element(By.CLASS_NAME, "fl-photo-img")
+    element.click()
+    time.sleep(10)
+
+@then('entra na pagina inicial do site')
+def step_impl(context):
+    print("passou2")
+    pass
+
+
+
+#Teste 1
+@given('que acesso a pagina Algoritmo')
+def step_impl(context):
+    driver = webdriver.Chrome("chromedriver")
+    driver.get("https://www.cursoemvideo.com/curso/curso-de-algoritmo/")
+    
+    context.driver = driver
+    pass
+
+@when('tirar o spam')
+def step_impl(context):
+    driver = context.driver
+    sp = driver.find_element(By.ID, "cn-close-notice")
+    sp.click()
+    pass
+
+@when('aperto o botao faça seu login')
+def step_impl(context):
+    driver = context.driver
+    time.sleep(5)
+    element = driver.find_element(By.CLASS_NAME, "ld-course-status-action")
+    element.click()
+    time.sleep(10)
+    pass
+
+@when('cacenlando o spam')
+def step_impl(context):
+    driver = context.driver
+    sp2 = driver.find_element(By.CLASS_NAME, "ns-xag5l-e-14")
+    sp2.click()
+    time.sleep(15)
+    pass
+
+@then('entra na pagina login')
+def step_impl(context):
+    driver = context.driver
+    pass
+"""
+
+
+
+
+
+
+

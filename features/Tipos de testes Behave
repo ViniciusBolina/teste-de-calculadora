@@ -1,0 +1,24 @@
+teste 1:
+   Scenario: Avaliando botao login
+        Given que acesso a pagina Algoritimo
+        when tirar o spam
+        when aperto o botao faça seu login
+        when cacenlando o spam
+        Then entra na pagina login
+_________________________________________
+teste 2:
+   Scenario: Testando logo
+        Given que acesso a pagina Algoritimo
+        when tirar o spam
+        when aperto o logo curso em video
+        then entra na pagina inicial do site
+
+
+
+Scenario: Testar se é par
+        Given receber um numero <x>
+        When o numero for divisivel por 0
+        Then mostre se eh par ou impar
+    Examples: numeros
+            |x|
+            |2|
